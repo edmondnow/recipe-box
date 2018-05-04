@@ -1,0 +1,8 @@
+.btn {
+  max-width: 120px;
+  margin: 20px 10px 0px 0px !important;
+  display: inline-block;
+}
+body {
+  margin-top: 50px !important;
+}
