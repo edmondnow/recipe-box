@@ -40,6 +40,7 @@
     "redux-promise": "^0.5.3",
     "request": "^2.85.0",
     "simple-get": "^3.0.2",
-    "tablesorter": "^2.30.3"
+    "tablesorter": "^2.30.3",
+    "uniqid": "^4.1.1"
   }
 }
