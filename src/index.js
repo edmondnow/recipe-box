@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import ReduxPromise from 'redux-promise';
 
 
-import MakeRecipeBox from './components/box';
+import MakeRecipeBox from './components/makebox';
 
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
