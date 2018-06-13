@@ -17,15 +17,15 @@ class MakeForm extends Component {
           <FormControl
             type="text"
             value={this.props.recipe}
-            placeholder="Enter text"
+            placeholder="Stake"
             id='recipe'
             onChange={this.props.handleChange}
-          />
+          /><br />
           <ControlLabel>Ingredients (separated by comma)</ControlLabel>
           <FormControl
             type="text"
             value={this.props.ingredients}
-            placeholder="Salt, Pepper"
+            placeholder="Stake, Salt, Pepper"
             id='ingredients'
             onChange={this.props.handleChange}
           />

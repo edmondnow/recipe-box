@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Button, Well, ListGroup } from 'react-bootstrap';
 import ListItemDropdown from './ListItemDropdown'
 import Modal from './modal';
-import Panel from './panel';
 import uniqid from 'uniqid';
 import _ from 'lodash';
 
@@ -39,13 +38,12 @@ class MakeRecipeBox extends Component{
   }
   
   editRecipe(id, name, ingredients ){
+    let index, color; 
     let recipes = this.state.recipes;
     ingredients = ingredients.split(',');;
     ingredients = ingredients.map(ingredient => {
       return ingredient.trim();
     });
-    let index;
-    let color; 
     for(let i = 0; i < recipes.length; i++){
         if(this.state.recipes[i].id == id){
           index = i;
@@ -69,9 +67,7 @@ class MakeRecipeBox extends Component{
 
   changeColor(e){
     e.stopPropagation();
-    let index;
-    let ingredients;
-    let name;
+    let index, ingredients, name;
     let id = e.target.parentNode.id;
     let color = e.target.id;
     let recipes = this.state.recipes;
