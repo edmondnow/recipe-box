@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Well, ListGroup } from 'react-bootstrap';
-import ListItemDropdown from './ListItemDropdown'
+import ListItemDropdown from './listitemdropdown'
 import Modal from './modal';
 import uniqid from 'uniqid';
 import _ from 'lodash';
